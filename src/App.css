@@ -1,0 +1,21 @@
+.app-containeer {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .sidebar {
+    width: 20vw; /* Adjust width as needed */
+    height: 100vh;
+    background-color: white; /* Background color for sidebar */
+    position: fixed;
+  }
+  
+  .main-content {
+    margin-left: 170px; /* Same as sidebar width */
+    padding: 20px; /* Optional padding */
+    width:80vw; /* Adjust width as needed */
+    
+  }
+  
