@@ -3,19 +3,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    position: relative;
   }
   
-  .sidebar {
-    width: 20vw; /* Adjust width as needed */
-    height: 100vh;
-    background-color: white; /* Background color for sidebar */
-    position: fixed;
+  #sideeBar {
+ position: fixed;
+ margin:2px;
   }
   
   .main-content {
-    margin-left: 170px; /* Same as sidebar width */
-    padding: 20px; /* Optional padding */
-    width:80vw; /* Adjust width as needed */
-    
+    margin-left: 300px;
+    margin-top: 8px;
+    width:80vw;
   }
   
+

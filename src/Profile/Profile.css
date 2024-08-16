@@ -12,25 +12,27 @@ body {
 
 
 
-.main-content {
+#main-content {
   /* flex-grow: 1; */
  
   /* display: flex; */
   /* width: 60vw; */
    height: 100vh;
   /* padding: 20px; */
+ 
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1E88E5;
+  background-color: #6f40f1;
   color: white;
   padding: 20px;
   width: 70vw;
   border-radius: 8px;
   /* margin-bottom: 20px; */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 5);
   
 }
 
@@ -52,11 +54,11 @@ body {
 
 .professional-info,
 .academic-contributions {
-  background-color: burlywood;
+  background-color: rgb(76, 195, 241);
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 5);
   margin: 30px;
   height: 150px;
   margin-left: 0;
@@ -70,11 +72,13 @@ body {
   margin-right: 5px;
   border-radius: 3px;
   margin: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 5);
 }
 
 .tabs {
   display: flex;
   margin-bottom: 10px;
+  
 }
 
 .tab {
@@ -86,6 +90,7 @@ body {
   margin-right: 5px;
   border-radius: 4px;
   transition: background-color 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 5); 
 }
 
 .tab.active {

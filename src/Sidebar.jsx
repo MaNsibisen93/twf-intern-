@@ -18,7 +18,9 @@ const Sidebar = () => {
         <Link to="/Course"  style={{textDecoration:'none',color:'black'}}>
         <li className="menu-item">Course Management</li>
         </Link>
+        <Link to='/Student' style={{textDecoration:'none' ,color:'black'}}>
         <li className="menu-item">Student Management</li>
+        </Link>
         <li className="menu-item">Live Classes And Videos</li>
         <li className="menu-item">Assignment & Exam</li>
         <li className="menu-item">Resorces & Support</li>

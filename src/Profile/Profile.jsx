@@ -34,7 +34,7 @@ const Profile = () => {
 
 
   return (
-      <main className="main-content">
+      <main id="main-content">
         <header className="header">
         <div id="header-info" style={{ backgroundColor: "#4A90E2", color: "white", padding: "10px" }}>
         <h2>{user.name}</h2>
@@ -56,12 +56,13 @@ const Profile = () => {
           justifyContent: "center",
           alignItems: "center",
         }}>
-          <div style={{ backgroundColor: "blue", padding: "20px", borderRadius: "5px" }}>
+          <div style={{ backgroundColor: "blue", padding: "20px", borderRadius: "5px" , }}>
             <h3>Edit Details</h3>
             <form onSubmit={handleSubmit}>
               <div>
                 <label>Email Address:</label>
                 <input
+                  style={{margin:"10px" , height:"40px" , width:"200px" , borderRadius:"5px"}}
                   type="email"
                   name="email"
                   value={user.email}
@@ -72,6 +73,7 @@ const Profile = () => {
               <div>
                 <label>Phone Number:</label>
                 <input
+                 style={{margin:"10px" , height:"40px" , width:"200px" , borderRadius:"5px"}}
                   type="tel"
                   name="phone"
                   value={user.phone}
@@ -82,6 +84,7 @@ const Profile = () => {
               <div>
                 <label>DOB:</label>
                 <input
+                 style={{margin:"10px" , height:"40px" , width:"200px" , borderRadius:"5px"}}
                   type="text"
                   name="dob"
                   value={user.dob}
@@ -89,9 +92,9 @@ const Profile = () => {
                   required
                 />
               </div>
-              <button type="submit">Save</button>
+              <button type="submit"  style={{margin:"5px" , height:"40px" , width:"100px" , borderRadius:"5px", marginLeft:"2px"}}>Save</button>
             </form>
-            <button onClick={() => setIsPopupOpen(false)}>Cancel</button>
+            <button  style={{margin:"5px" , height:"40px" , width:"200px" , borderRadius:"5px"}} onClick={() => setIsPopupOpen(false)}>Cancel</button>
           </div>
         </div>
       )}

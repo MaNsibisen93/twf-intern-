@@ -14,7 +14,7 @@
   align-items: center;
   padding: 20px;
   box-sizing: border-box;
-  background-color: darkblue;
+  background-color: rgb(4, 38, 151);
   
 }
 
@@ -52,6 +52,7 @@
   padding: 0;
   margin: 0;
   width: 100%;
+ 
 }
 
 .menu-item {
