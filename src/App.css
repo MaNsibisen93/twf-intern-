@@ -1,3 +1,5 @@
+
+
 .app-containeer {
     display: flex;
     margin: 0;
@@ -12,7 +14,7 @@
   }
   
   .main-content {
-    margin-left: 300px;
+    margin-left: 260px;
     margin-top: 8px;
     width:80vw;
   }

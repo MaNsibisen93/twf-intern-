@@ -8,6 +8,7 @@ const Profile = () => {
     phone: "1234567890",
     dob: "17 Jul",
   });
+  
 
   // State to handle the visibility of the popup
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -34,9 +35,12 @@ const Profile = () => {
 
 
   return (
-      <main id="main-content">
-        <header className="header">
-        <div id="header-info" style={{ backgroundColor: "#4A90E2", color: "white", padding: "10px" }}>
+      <main id="main-conntent">
+        <header id="heaader">
+        <div id="header-info">
+        
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAzBE_P3rPclK8gJnC-y1Mq7kNOvyL8yUHlg&s" alt="Profile" className="profile-pic" />
+  
         <h2>{user.name}</h2>
         <p>Email Address: {user.email}</p>
         <p>Phone Number: {user.phone}</p>
@@ -56,13 +60,13 @@ const Profile = () => {
           justifyContent: "center",
           alignItems: "center",
         }}>
-          <div style={{ backgroundColor: "blue", padding: "20px", borderRadius: "5px" , }}>
+          <div style={{ backgroundColor: "lightgreen", padding: "20px", borderRadius: "5px" , }}>
             <h3>Edit Details</h3>
             <form onSubmit={handleSubmit}>
               <div>
                 <label>Email Address:</label>
                 <input
-                  style={{margin:"10px" , height:"40px" , width:"200px" , borderRadius:"5px"}}
+                  style={{margin:"10px" ,padding:"10px", height:"40px" , width:"200px" , borderRadius:"5px"}}
                   type="email"
                   name="email"
                   value={user.email}
@@ -73,7 +77,7 @@ const Profile = () => {
               <div>
                 <label>Phone Number:</label>
                 <input
-                 style={{margin:"10px" , height:"40px" , width:"200px" , borderRadius:"5px"}}
+                 style={{margin:"10px" ,padding:"10px", height:"40px" , width:"200px" , borderRadius:"5px"}}
                   type="tel"
                   name="phone"
                   value={user.phone}
@@ -84,7 +88,7 @@ const Profile = () => {
               <div>
                 <label>DOB:</label>
                 <input
-                 style={{margin:"10px" , height:"40px" , width:"200px" , borderRadius:"5px"}}
+                 style={{margin:"10px" , padding:"10px" , height:"40px" , width:"200px" , borderRadius:"5px"}}
                   type="text"
                   name="dob"
                   value={user.dob}
@@ -94,18 +98,21 @@ const Profile = () => {
               </div>
               <button type="submit"  style={{margin:"5px" , height:"40px" , width:"100px" , borderRadius:"5px", marginLeft:"2px"}}>Save</button>
             </form>
-            <button  style={{margin:"5px" , height:"40px" , width:"200px" , borderRadius:"5px"}} onClick={() => setIsPopupOpen(false)}>Cancel</button>
+            <button  style={{margin:"5px" , height:"40px" , width:"100px" , borderRadius:"5px"}} onClick={() => setIsPopupOpen(false)}>Cancel</button>
           </div>
         </div>
       )}
 
         </header>
-        <section className="professional-info"  >
-          <h3>Professional Information</h3>
-          <p>Teacher ID: UT10302002</p>
-          <p>Specialization: <span className="specialization">Game Theory</span> <span className="specialization">Machine Learning</span></p>
-        </section>
-        <section className="academic-contributions">
+        <section id="professional-info"  >
+          <h2>Professional Information</h2>
+          <h3>Teacher ID: UT10302002</h3>
+          <span id="h3">Specialization: 
+            <button className="specialization">Game Theory</button>
+             <button className="specialization">Machine Learning</button>
+             </span>
+       
+        <section id="academic-contributions">
           <h3>Academic Contributions</h3>
           <div className="tabs">
             <button className="tab active">Research</button>
@@ -129,8 +136,14 @@ const Profile = () => {
               <p>DOI: <a href="https://doi.org/AA.BBB.CC" target="_blank" rel="noopener noreferrer">https://doi.org/AA.BBB.CC</a></p>
             </div>
           </div>
+          </section>
       </main>
   );
 };
 
 export default Profile;
+
+
+
+
+
